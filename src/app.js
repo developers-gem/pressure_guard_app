@@ -60,9 +60,9 @@ app.use("/api/patients/:patientId/repositioning", repositionNested);
 app.use("/api/patients/:patientId/braden", bradenRoutes);
 app.use("/api/patients/:patientId/skin-inspections", skinInspectionRoutes);
 app.use("/api/patients/:patientId/foot-assessments", footAssessmentRoutes);
-app.use("/api/repositioning", repositionRoutes);
-app.use("/api/uploads", uploadRoutes);
-app.use("/api/compliance", complianceRoutes);
+app.use("/api/repositioning",repositionRoutes);
+app.use("/api/uploads",uploadRoutes);
+app.use("/api/compliance",complianceRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
